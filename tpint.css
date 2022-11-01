@@ -1,0 +1,29 @@
+.Titulo1{
+    margin-left: 10%;
+    margin-right: 40%;
+}
+
+.col1{
+    border: 1px solid blue;
+    text-align: center;
+    padding: 5%;
+    
+}
+
+.col2{
+    border: 1px solid lightblue;
+    text-align: center;
+    padding: 5%;
+}
+
+.col3{
+    border: 1px solid yellow;
+    text-align: center;
+    padding: 5%;
+}
+
+.navbar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(52, 95, 104) 100%);
+    justify-content: space-around;
+}

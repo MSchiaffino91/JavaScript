@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP JavaScript</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="./tpint.css">
+</head>
+<body>
+    
+    <!--Encabezado-->
+    <main class="container-fuid justify-content-center">
+      <div class="row text-bg-dark opacity-75" style="height:50px;">
+        <div class="col-4 my-auto d-inline">
+          <div class="Titulo1" style="color:white">Conf Bs As</div>
+        </div>
+        <div class="col-8 my-auto d-inline nav justify-content-center">
+          <a class="nav1 nav-link d-inline" href="#" style="color:white"><small class="text-muted">La conferencia</small></a>
+          <a class="nav1 nav-link d-inline" href="#" style="color:white"><small class="text-muted">Los oradores</small></a>
+          <a class="nav1 nav-link d-inline" href="#" style="color:white"><small class="text-muted">El lugar y la fecha</small></a>
+          <a class="nav1 nav-link d-inline" href="#" style="color:white"><small>Conviértete en orador</small></a>
+          <a class="nav1 nav-link d-inline" href="#" style="color:green"><small><b>Comprar tickets</b></small></a>
+        </div>
+      </div>
+    </main>
+    <br>
+
+    <!---->
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-left: 20%; margin-right: 20%;">
+        <div class="col1" style="height: 20%">
+            <div class="card-body">
+              <h5 class="card-title">Estudiante</h5>
+              <br>
+              <p class="card-text">Tienen un descuento</p>
+              <p><b>80%</b></p>
+              <div class="card-footer">
+                <small class="text-muted">* presentar documentación</small>
+              </div>
+            </div>
+        </div>
+        <div class="col2" style="height: 20%">
+            <div class="card-body">
+              <h5 class="card-title">Trainee</h5>
+              <br>
+              <p class="card-text">Tienen un descuento</p>
+              <p><b>50%</b></p>
+              <div class="card-footer">
+                <small class="text-muted">* presentar documentación</small>
+              </div>
+            </div>
+        </div>       
+        <div class="col3" style="height: 2%">
+            <div class="card-body">
+              <h5 class="card-title">Junior</h5>
+              <br>
+              <p class="card-text">Tienen un descuento</p>
+              <p><b>15%</b></p>
+              <div class="card-footer">
+                <small class="text-muted">* presentar documentación</small>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!--VALOR TICKET-->
+    <div class="text-center mx-auto">
+      <small class="text-muted">VENTA</small>
+      <h3>VALOR DE TICKET $200</h3>
+      <div class="row g-3 mx-auto" style="width:50%">
+        <div class="col">
+          <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+          <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+      <br>
+      <div class="input-group mx-auto" style="width:50%">
+        <input id="correo" type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+      </div>
+      <br>
+      <div class="row g-3 mx-auto" style="width:50%">
+        <div class="col">
+          <p>Cantidad</p>
+          <input id="cantidad" type="number" class="form-control" placeholder="cantidad" aria-label="cantidad">
+        </div>
+        <div class="col">
+          <label for="inputCategoria" class="form-label">Categoria</label>
+          <select id="inputCategoria" class="form-select">
+            <option value="20">Estudiante</option>
+            <option value="50">Trainee</option>
+            <option value="85">Junior</option>
+          </select>
+        </div>
+        <br>
+        <div class="alert alert-primary mt-4" role="alert">
+          <span>Total a pagar: $</span>
+          <span id="resutado" test="aaaa"></span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="reset" onclick="borrar();" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0" style="background-color: lawngreen; color:white">Borrar</button>
+          </div>
+          <div class="col">
+            <button type="reset" onclick="resumen();" id="btn-bsas" class="btn col-12 mt-3 mb-1 mx-0" style="background-color: lawngreen; color:white">Resumen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+ <!--NAV FIN-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style= "height: 15vh">
+      <div class="col-10 my-auto d-inline container-fluid justify-content-center">
+        <div class="navbar-nav">
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Preguntas Frecuentes</a>
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Contáctenos</a>
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Prensa</a>
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Conferencias</a>
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Términos y condiciones</a>
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Privacidad</a>
+          <a class="nav-link active" style="width:14%" aria-current="page" href="#">Estudiantes</a>
+        </div>
+      </div>
+    </nav>
+
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>   
+ <script src="./index.js"></script>
+</body>
+</html>

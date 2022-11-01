@@ -1,0 +1,50 @@
+.logo1{
+    justify-content: center;
+}
+
+.nav1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar{
+    color: white;
+    background-color: rgb(42, 42, 124)
+}
+
+.card-img{
+    filter: brightness(50%);
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.P1{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+.P2{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    width: 35%;
+}
+
+.P3{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.T1{
+    position: absolute;
+    left: 25%
+}
